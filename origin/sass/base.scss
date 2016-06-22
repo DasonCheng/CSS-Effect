@@ -1,0 +1,40 @@
+.clearfix::after, .clearfix::before {
+  content: '';
+  display: block;
+}
+
+@import "mxin/variables";
+.clearfix::after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.areaheart {
+  position: relative;
+  width: $areaheartWith;
+  margin: 0 auto;
+  transition: width .6s;
+}
+
+html {
+  cursor: default;
+}
+
+@media screen and (min-width: 1380px) {
+  .areaheart {
+    width: 1280px;
+  }
+}
+
+@media screen and (min-width: 1660px) {
+  .areaheart {
+    width: 1560px;
+  }
+}
+
+body {
+  font-family: HanHei SC, PingFang SC, Helvetica Neue, Helvetica, STHeitiSC-Light, Arial, Microsoft YaHei UI, \\5FAE\8F6F\96C5\9ED1, STHeiti, \\534E\6587\7EC6\9ED1, sans-serif;
+}

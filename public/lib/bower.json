@@ -1,0 +1,22 @@
+{
+  "name": "lib",
+  "homepage": "https://github.com/DasonCheng/main",
+  "authors": [
+    "DasonCheng <dasoncheng@foxmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "typeit": "^4.2.3",
+    "jquery": "^3.0.0"
+  }
+}
