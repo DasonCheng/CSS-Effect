@@ -14,7 +14,6 @@
 
 .areaheart {
   position: relative;
-  width: $areaheartWith;
   margin: 0 auto;
   transition: width .6s;
 }
@@ -22,7 +21,16 @@
 html {
   cursor: default;
 }
-
+@media screen and (min-width: 0px) {
+  .areaheart {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 970px) {
+  .areaheart {
+    width: 960px;
+  }
+}
 @media screen and (min-width: 1380px) {
   .areaheart {
     width: 1280px;

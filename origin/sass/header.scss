@@ -1,5 +1,23 @@
 @import "mxin/variables";
 
+@media (min-width: 0px) {
+  .nav-list, .nav-info {
+    display: none;
+  }
+  .nav-min {
+    display: block;
+  }
+}
+
+@media (min-width: 960px) {
+  .nav-list, .nav-info {
+    display: block;
+  }
+  .nav-min {
+    display: none;
+  }
+}
+
 header {
   .nav-list {
     background-color: rgba(255, 255, 255, .9);
@@ -109,7 +127,6 @@ header {
     width: 100%;
     height: 34px;
     overflow: hidden;
-    min-width: $areaheartWith;
     background-color: $foreColor;
     ul {
       li {
@@ -132,6 +149,27 @@ header {
           }
         }
       }
+    }
+  }
+  .nav-min {
+    background-color: $foreColor;
+    table {
+      width: 100%;
+      height: 49px;
+      .min-menu-btn {
+        width: 1em;
+        text-align: center;
+      }
+      .min-main-logo {
+        text-align: center;
+      }
+      .min-home-btn {
+        width: 1em;
+        text-align: center;
+      }
+    }
+    .min-menu-content {
+
     }
   }
 }

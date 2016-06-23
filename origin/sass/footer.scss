@@ -1,8 +1,20 @@
 @import "mxin/variables";
 
+@media (min-width: 0px) {
+  footer ul li {
+    width: 100%;
+  }
+}
+
+@media (min-width: 960px) {
+  footer ul li {
+    float: left;
+    width: 25%;
+  }
+}
+
 footer {
   position: relative;
-  min-width: $areaheartWith;
   padding: 26px 0;
   font-size: 12px;
   background-color: #2e2e2e;
@@ -20,8 +32,6 @@ footer {
   ul {
     li {
       position: relative;
-      float: left;
-      width: 25%;
       &:not(:first-child) {
         &:before {
           content: '';

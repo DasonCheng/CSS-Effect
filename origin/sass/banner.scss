@@ -1,5 +1,17 @@
 @import "mxin/variables";
 
+@media (min-width: 0px) {
+  .slide-banner {
+    height: 200px;
+  }
+}
+
+@media (min-width: 960px) {
+  .slide-banner {
+    height: 730px;
+  }
+}
+
 %control-style {
   content: '';
   position: absolute;
@@ -15,8 +27,6 @@
 
 .slide-banner {
   position: relative;
-  height: 730px;
-  min-width: $areaheartWith;
   background-color: #eee;
   ol {
     position: absolute;

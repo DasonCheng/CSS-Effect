@@ -11,6 +11,64 @@ html
         include includes/header.pug
         section
             include includes/banner.pug
+            .product-info.bg-l.clearfix
+                .product-img#yhet-01
+                    ul.bg-img-info
+                        li(style="background-image: url(public/imgs/feature_01.png);")
+                        li(style="background-image: url(public/imgs/feature_02.png);")
+                        li(style="background-image: url(public/imgs/feature_03.png);")
+                        li(style="background-image: url(public/imgs/feature_04.png);")
+                        li(style="background-image: url(public/imgs/feature_05.png);")
+                    .bg-img-content.layer(style="background-image: url(public/imgs/yhet_vr_01.png);",data-depth="0.40")
+                .product-content
+                    h3
+                        strong Yhet
+                        | X-1
+                    p 我们坚持用心设计，精益求精的产品工艺，让您真实般的游走在虚拟世界之中，让您真正的享受到影院级视听感受，极低的产品售价塑造VR产品的性价比之王。
+                    span
+                        em 售价
+                        i ￥
+                        strong 299
+                    table
+                        caption 参数
+                        tr
+                            th 产品类别
+                            td 主打影音功能
+                        tr
+                            th 适配设备
+                            td 4.7-5.0寸屏幕的iphone或安卓手机
+                        tr
+                            th 可视角
+                            td 50°
+                        tr
+                            th 裸眼视力范围
+                            td 0-200°裸眼，更高度数需配戴眼镜
+            .product-info.bg-r.clearfix
+                .product-content
+                    h3
+                        strong Yhet
+                        | O-1
+                    p 戴上它手机瞬间变成3D巨幕影院，为你带来你令人难以置信的视觉保真度和身临其境感，随时随地想看就看。
+                    span
+                        em 售价
+                        i ￥
+                        strong 399
+                    table
+                        caption 参数
+                        tr
+                            th 产品类别
+                            td 全功能的Mobile VR产品
+                        tr
+                            th 适配设备
+                            td 4.5-6.0寸屏幕的iphone或安卓手机
+                        tr
+                            th 可视角
+                            td 68°
+                        tr
+                            th 裸眼视力范围
+                            td 0-400°
+                .product-img#yhet-02
+                    .bg-img-content.layer(style="background-image: url(public/imgs/yhet_vr_02.png);",data-depth="0.40")
         include includes/footer.pug
         script(src="public/lib/bower_components/jquery/dist/jquery.min.js")
         script(src="public/build/common.js")

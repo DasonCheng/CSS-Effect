@@ -13,19 +13,19 @@ $(function () {
         nav_list_array.removeClass("active");
         $(this).addClass("active");
 
-        nav_info_array.eq(list_index).addClass("active").animate({opacity: 1}, 300).siblings().removeClass("active");
+        nav_info_array.eq(list_index).addClass("active").stop().animate({opacity: 1}, 300).siblings().removeClass("active");
     }, function () {
         nav_list_array.removeClass("active");
         nav_list_array.eq(origin_index).addClass("active");
         nav_info_array.animate({opacity: 0}, 0);
-        nav_info_array.eq(origin_index).addClass("active").animate({opacity: 1}, 300).siblings().removeClass("active");
+        nav_info_array.eq(origin_index).addClass("active").stop().animate({opacity: 1}, 300).siblings().removeClass("active");
     });
 
 
     $("header .nav-info").hover(function () {
         nav_list_array.removeClass("active");
         nav_list_array.eq(list_index).addClass("active");
-        nav_info_array.eq(list_index).addClass("active").animate({opacity: 1}, 0).siblings().removeClass("active");
+        nav_info_array.eq(list_index).addClass("active").stop().animate({opacity: 1}, 0).siblings().removeClass("active");
 
     }, function () {
         nav_list_array.removeClass("active");
