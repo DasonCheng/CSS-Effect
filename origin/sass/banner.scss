@@ -1,0 +1,144 @@
+@import "mxin/variables";
+
+%control-style {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 10px;
+  height: 2px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(255, 255, 255, .6);
+  transform-origin: 0 0;
+  transition: background-color .6s;
+}
+
+.slide-banner {
+  position: relative;
+  height: 730px;
+  min-width: $areaheartWith;
+  background-color: #eee;
+  ol {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    font-size: 0;
+    text-align: center;
+    li {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 10px;
+      border-radius: 15px;
+      background-color: rgba(255, 255, 255, 1);
+      cursor: pointer;
+      transition: background-color .6s;
+      &.active {
+        background-color: $foreColor;
+      }
+    }
+  }
+  ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    li {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      background: {
+        size: cover;
+        repeat: no-repeat;
+        position: 50% 50%;
+      }
+      opacity: 0;
+      transition: opacity .6s;
+      &.active {
+        z-index: 2;
+        opacity: 1;
+      }
+      h3 {
+        padding-top: 140px;
+        font-size: 40px;
+        color: rgba(255, 255, 255, 1);
+        font-weight: lighter;
+
+      }
+      p {
+        padding-top: 26px;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 1);
+        font-weight: lighter;
+
+      }
+      a {
+        position: absolute;
+        bottom: 150px;
+        left: 50%;
+        height: 40px;
+        padding: 0 2em;
+        border: 1px solid rgba(255, 255, 255, 1);
+        line-height: 40px;
+        font-size: 22px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 1);
+        transform: translateX(-50%);
+        transition: color .6s, border .6s;
+        &:hover {
+          border-color: $foreColor;
+          color: $foreColor;
+        }
+      }
+    }
+  }
+  span {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    border: 2px solid rgba(255, 255, 255, .6);
+    border-radius: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: border .6s;
+    &:before {
+      @extend %control-style;
+      top: 50%;
+      margin-top: -2px;
+      margin-left: -5px;
+      transform: rotate(45deg);
+    }
+    &:after {
+      @extend %control-style;
+      bottom: 50%;
+      margin-bottom: -1px;
+      margin-left: -6px;
+      transform: rotate(-45deg);
+    }
+    &:hover {
+      & {
+        border-color: rgba(255, 255, 255, 1);
+      }
+      &:before, &:after {
+        background-color: rgba(255, 255, 255, 1);
+      }
+    }
+    &.control-left {
+      left: 3%;
+    }
+    &.control-right {
+      right: 3%;
+      transform: rotate(180deg);
+    }
+  }
+}

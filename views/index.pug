@@ -4,13 +4,14 @@ html
         title 炎黄娱动
         meta(name="description" content="炎黄娱动是一家专注于游戏研发的高新科技产业公司。主要从事网页游戏，社交游戏及手机游戏的研发及运营。国内一流的专业游戏开发及运营公司，目前在网页游戏领域有多款成功产品")
         meta(name="keywords" content="游戏平台，游戏进展,新游戏发布,网页游戏, 手机游戏，webgame, 游戏开发,咕噜岛 ,幸福小镇，MUMUGO，半回合制，SNS游戏、手机塔防游戏")
-        include includes/meta
+        include includes/meta.pug
         link(rel="stylesheet" href="public/build/common.css")
         link(rel="stylesheet" href="public/build/index.css")
     body
-        include includes/header
+        include includes/header.pug
         section
-            .areaheart
+            include includes/banner.pug
+        include includes/footer.pug
         script(src="public/lib/bower_components/jquery/dist/jquery.min.js")
         script(src="public/build/common.js")
         script(src="public/build/index.js")
