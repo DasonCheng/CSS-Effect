@@ -1,46 +1,56 @@
 @import "mxin/variables";
 
 @media (min-width: 0px) {
-  section .product-info .product-img {
-    width: 100%;
-    height: 360px;
-    padding: 20px;
-    ul.bg-img-info{
-      height: 100px;
+  section {
+    .product-info {
+      .product-img {
+        width: 100%;
+        height: 360px;
+        padding: 20px;
+        ul.bg-img-info {
+          height: 100px;
+        }
+      }
+      .product-content {
+        width: 100%;
+        padding: 20px;
+      }
     }
-  }
-  section .product-info .product-content {
-    width: 100%;
-    padding: 20px;
   }
 }
 
 @media (min-width: 960px) {
-  section .product-info .product-img {
-    float: left;
-    width: 60%;
-    padding: 70px;
-    ul.bg-img-info{
-      height: 120px;
+  section {
+    .product-info {
+      &.bg-r {
+        padding-bottom: 40px;
+      }
+      padding-top: 40px;
+      .product-img {
+        float: left;
+        width: 60%;
+        padding: 70px;
+        ul.bg-img-info {
+          height: 120px;
+        }
+      }
+      .product-content {
+        float: left;
+        width: 40%;
+        padding: 70px;
+      }
     }
-  }
-  section .product-info .product-content {
-    float: left;
-    width: 40%;
-    padding: 70px;
   }
 }
 
 section {
   .product-info {
-    padding-top: 40px;
     &.bg-l {
       .product-content {
         background-color: $foreColor;
       }
     }
     &.bg-r {
-      padding-bottom: 40px;
       .product-content {
         background-color: #212121;
       }
