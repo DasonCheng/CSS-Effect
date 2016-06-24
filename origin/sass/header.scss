@@ -20,7 +20,7 @@
 
 header {
   .nav-list {
-    background-color: rgba(255, 255, 255, .9);
+    background: url("../../public/imgs/cloud.png") repeat;
     .areaheart {
       height: 98px;
     }
@@ -127,7 +127,7 @@ header {
     width: 100%;
     height: 34px;
     overflow: hidden;
-    background-color: $foreColor;
+    background: url("../../public/imgs/cloud.png") repeat $foreColor;
     ul {
       li {
         display: none;
