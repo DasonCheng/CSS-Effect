@@ -153,37 +153,37 @@ header {
   }
   .nav-min {
     background-color: $foreColor;
-    table {
+    .min-menu-top {
       width: 100%;
       height: 49px;
-
-      span {
-        display: block;
+      .min-menu-btn {
+        float: left;
         width: 30px;
         height: 100%;
-        a{
+        a {
           display: block;
           width: 100%;
-          height:100%;
-          text-indent:-10em;
+          height: 100%;
+          text-indent: -10em;
           overflow: hidden;
-        }
-      }
-      .min-menu-btn {
-        width: 1em;
-        text-align: center;
-        span {
           background: url("../../public/imgs/icon_menu.png") no-repeat right center;
           background-size: 80% auto;
         }
       }
       .min-main-logo {
-        text-align: center;
+        height: 100%;
+        margin: 0 30px;
       }
       .min-home-btn {
-        width: 1em;
-        text-align: center;
-        span {
+        float: right;
+        width: 30px;
+        height: 100%;
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-indent: -10em;
+          overflow: hidden;
           background: url("../../public/imgs/icon_home.png") no-repeat left center;
           background-size: 100% auto;
         }
