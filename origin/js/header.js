@@ -34,7 +34,7 @@ $(function () {
         list_index = origin_index;
     });
     //min-header
-    $(".nav-min .min-menu-btn span").click(function () {
+    $(".nav-min .min-menu-btn span a").click(function () {
         $(".min-menu-content").addClass("active");
     });
     $(".min-menu-content .shade-box").click(function () {
