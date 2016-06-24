@@ -160,7 +160,14 @@ header {
         width: 1em;
         text-align: center;
         span {
+          display: block;
+          width: 30px;
+          height: 100%;
+          text-indent:-9em;
+          overflow: hidden;
           cursor: pointer;
+          background: url("../../public/imgs/icon_menu.png") no-repeat center center;
+          background-size: 100% auto;
         }
       }
       .min-main-logo {
@@ -170,7 +177,14 @@ header {
         width: 1em;
         text-align: center;
         span {
+          display: block;
+          width: 30px;
+          height: 100%;
+          text-indent:-9em;
+          overflow: hidden;
           cursor: pointer;
+          background: url("../../public/imgs/icon_home.png") no-repeat center center;
+          background-size: 100% auto;
         }
       }
     }
