@@ -34,13 +34,13 @@ $(function () {
         list_index = origin_index;
     });
     //min-header
+    $(".nav-min .min-menu-btn span").click(function () {
+        $(".min-menu-content").addClass("active");
+    });
     $(".min-menu-content .shade-box").click(function () {
-        console.log("shade");
+        $(".min-menu-content").removeClass("active");
     });
     $(document).on('touchmove', '.shade-box', function () {
         event.preventDefault();
     });
-    $(".min-menu-content a").click(function () {
-        console.log("a");
-    })
 });
