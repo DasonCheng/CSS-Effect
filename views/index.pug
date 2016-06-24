@@ -71,5 +71,10 @@ html
                     .bg-img-content.layer(style="background-image: url(public/imgs/yhet_vr_02.png);",data-depth="0.40")
         include includes/footer.pug
         script(src="public/lib/bower_components/jquery/dist/jquery.min.js")
+        script(src="public/lib/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js")
         script(src="public/build/common.js")
         script(src="public/build/index.js")
+        script.
+            $(function () {
+                $(".scroll").mCustomScrollbar();
+            })

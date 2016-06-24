@@ -32,5 +32,15 @@ $(function () {
         nav_list_array.eq(origin_index).addClass("active");
         nav_info_array.eq(origin_index).addClass("active").siblings().removeClass("active");
         list_index = origin_index;
+    });
+    //min-header
+    $(".min-menu-content .shade-box").click(function () {
+        console.log("shade");
+    });
+    $(document).on('touchmove', '.shade-box', function () {
+        event.preventDefault();
+    });
+    $(".min-menu-content a").click(function () {
+        console.log("a");
     })
 });
