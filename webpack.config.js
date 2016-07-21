@@ -2,8 +2,7 @@ var webpack = require("webpack");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
     entry: {
-        index: "./origin/entry/index.js",
-        about: "./origin/entry/about.js"
+        entry: "./origin/entry/entry.js"
     },
     output: {
         path: __dirname + '/public/build',
@@ -31,10 +30,10 @@ module.exports = {
     },
     devtool: "source-map",
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin({
-            name: "common",
-            minChunks: 2
-        }),
+        // new webpack.optimize.CommonsChunkPlugin({
+        //     name: "common",
+        //     minChunks: 2
+        // }),
         new ExtractTextPlugin("[name].css"),
         new webpack.optimize.UglifyJsPlugin({
             compress: {
