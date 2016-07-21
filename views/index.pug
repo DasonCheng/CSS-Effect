@@ -6,7 +6,8 @@ html
         meta(name="keywords" content="游戏平台，游戏进展,新游戏发布,网页游戏, 手机游戏，webgame, 游戏开发,咕噜岛 ,幸福小镇，MUMUGO，半回合制，SNS游戏、手机塔防游戏")
         meta(name="format-detection" content="telephone=no, email=no")
         include includes/meta.pug
-        link(rel="stylesheet" href="public/build/entry.css")
+        link(rel="stylesheet" href="public/build/common.css")
+        link(rel="stylesheet" href="public/build/index.css")
     body
         include includes/header.pug
         section
@@ -72,7 +73,8 @@ html
         include includes/footer.pug
         script(src="public/lib/bower_components/jquery/dist/jquery.min.js")
         script(src="public/lib/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js")
-        script(src="public/build/entry.js")
+        script(src="public/build/common.js")
+        script(src="public/build/index.js")
         script.
             $(function () {
                 $(".scroll").mCustomScrollbar();
