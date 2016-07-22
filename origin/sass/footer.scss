@@ -10,6 +10,18 @@
   footer ul li {
     float: left;
     width: 25%;
+    &:not(:first-child) {
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        border-left: 1px solid #3f3f3f;
+        background-color: #131313;
+      }
+    }
   }
 }
 
@@ -32,18 +44,7 @@ footer {
   ul {
     li {
       position: relative;
-      &:not(:first-child) {
-        &:before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 1px;
-          height: 100%;
-          border-left: 1px solid #3f3f3f;
-          background-color: #131313;
-        }
-      }
+
     }
   }
   dl {

@@ -7,6 +7,7 @@ import '../../public/lib/bower_components/malihu-custom-scrollbar-plugin/jquery.
 import '../sass/header.scss';
 import '../sass/banner.scss';
 import '../sass/index.scss';
+import '../sass/about.scss';
 import '../sass/footer.scss';
 import '../../public/lib/bower_components/typeit/dist/typeit.min.js';
 import '../../public/lib/bower_components/parallax/deploy/jquery.parallax.min.js';
