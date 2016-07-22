@@ -1,4 +1,7 @@
 @media (min-width: 0px) {
+  .min-banner {
+    height: 130px;
+  }
   .culture {
     figure {
       figcaption {
@@ -16,9 +19,20 @@
       margin-bottom: 20px;
     }
   }
+  .staff {
+    .staff-list {
+      img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
 @media (min-width: 960px) {
+  .min-banner {
+    height: 230px;
+  }
   .culture {
     figure {
       float: left;
@@ -48,11 +62,24 @@
       width: 30%;
     }
   }
+  .staff {
+    .staff-list {
+      padding-right: 5%;
+      img {
+        float: right;
+        width: 30%;
+        padding-top: 1%;
+        margin-bottom: 0;
+        &:not(:first-child) {
+          margin-right: 1%;
+        }
+      }
+    }
+  }
 }
 
 section.page-about {
   .min-banner {
-    height: 230px;
     background: {
       size: cover;
       repeat: no-repeat;
@@ -179,6 +206,11 @@ section.page-about {
   .staff {
     padding-bottom: 60px;
     background-color: #f6f6f6;
+    .staff-list {
+      img {
+        display: block;
+      }
+    }
   }
   .partner {
     padding-bottom: 60px;
