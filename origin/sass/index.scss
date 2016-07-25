@@ -23,7 +23,8 @@
   section {
     .product-info {
       &.bg-r {
-        padding-top: 5px;
+        //padding-top: 5px;
+        padding-bottom: 15px;
       }
       .product-img {
         float: left;
@@ -48,15 +49,22 @@ section {
       .product-content {
         background-color: $foreColor;
       }
+
+      .product-img {
+        background-color: #fff;
+      }
     }
     &.bg-r {
       .product-content {
         background-color: #212121;
       }
+
+      .product-img {
+        background-color: #e5e5e5;
+      }
     }
     .product-img {
       position: relative;
-      background-color: #e5e5e5;
       box-sizing: border-box;
       ul.bg-img-info {
         position: absolute;
