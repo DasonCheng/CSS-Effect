@@ -13,13 +13,9 @@ html
             include includes/banner.pug
             .product-info.bg-l.clearfix
                 .product-img#yhet-01
-                    ul.bg-img-info
-                        li(style="background-image: url(public/imgs/feature_01.png);")
-                        li(style="background-image: url(public/imgs/feature_02.png);")
-                        li(style="background-image: url(public/imgs/feature_03.png);")
-                        li(style="background-image: url(public/imgs/feature_04.png);")
-                        li(style="background-image: url(public/imgs/feature_05.png);")
-                    .bg-img-content.layer(style="background-image: url(public/imgs/yhet_vr_01.png);",data-depth="0.40")
+                    .bg-img-info
+                        img(src="public/imgs/icon.png")
+                    img.layer1(src="public/imgs/yhet_vr_01.png")
                 .product-content
                     h3
                         strong Yhet
@@ -68,12 +64,12 @@ html
                             th 裸眼视力范围
                             td 0-400°
                 .product-img#yhet-02
-                    .bg-img-content.layer(style="background-image: url(public/imgs/yhet_vr_02.png);",data-depth="0.40")
+                    img.layer1(src="public/imgs/yhet_vr_02.png")
         include includes/footer.pug
-        script(src="public/lib/bower_components/jquery/dist/jquery.min.js")
-        script(src="public/lib/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js")
+        script(src="public/js/jquery.min.js")
+        script(src="public/js/base.min.js")
         script(src="public/build/entry.js")
         script.
             $(function () {
-                $(".scroll").mCustomScrollbar();
+                $("html").niceScroll();
             })

@@ -1,14 +1,17 @@
 @import "mxin/variables";
 
-@media (min-width: 0px) {
+@media only screen and (min-width: 0px) {
   section {
     .product-info {
       .product-img {
         width: 100%;
-        height: 360px;
+        text-align: center;
         padding: 20px;
-        ul.bg-img-info {
-          height: 100px;
+        .bg-img-info {
+          padding: 10% 20px 0 20px;
+        }
+        .layer1 {
+          padding-top: 20%;
         }
       }
       .product-content {
@@ -30,8 +33,15 @@
         float: left;
         width: 60%;
         padding: 70px;
-        ul.bg-img-info {
-          height: 120px;
+        .bg-img-info {
+          padding: 70px 20px 0 20px;
+        }
+
+        .layer1 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
       }
       .product-content {
@@ -66,34 +76,20 @@ section {
     .product-img {
       position: relative;
       box-sizing: border-box;
-      ul.bg-img-info {
+      .bg-img-info {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        li {
-          float: left;
-          width: 20%;
-          height: 100%;
-          background: {
-            size: auto 45%;
-            repeat: no-repeat;
-            position: 50% 50%;
-          }
+        text-align: center;
+        img {
+          width: 100%;
+          max-width: 556px;
         }
       }
-      .bg-img-content {
-        position: absolute;
-        top: 6%;
-        left: 0;
-        width: 100%;
-        max-width: 750px;
-        height: 100%;
-        background: {
-          size: 80% auto;
-          repeat: no-repeat;
-          position: 50% 80%;
-        }
+      .layer1 {
+        width: 80%;
+        max-width: 566px;
       }
     }
     .product-content {

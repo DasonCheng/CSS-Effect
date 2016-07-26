@@ -34,9 +34,13 @@
     height: 230px;
   }
   .culture {
-    figure {
+    .figure-box {
       float: left;
       width: 25%;
+      figure {
+        max-width: 250px;
+        margin: 0 auto;
+      }
       figcaption {
         text-align: justify;
       }
@@ -44,22 +48,24 @@
   }
   .cared {
     figure {
-      float: left;
-      &:nth-child(2) {
-        margin: 0 5%;
-      }
       display: inline-block;
       width: 30%;
+      max-width: 278px;
+      margin: 0 40px;
+      margin-bottom: 20px;
     }
   }
   .leadership {
     figure {
-      float: left;
-      &:nth-child(2) {
-        margin: 0 5%;
-      }
       display: inline-block;
       width: 30%;
+      max-width: 278px;
+      margin: 0 40px;
+      margin-bottom: 20px;
+      &:nth-child(3) {
+        position: relative;
+        top: 20px;
+      }
     }
   }
   .staff {
@@ -115,8 +121,9 @@ section.page-about {
         width: 100%;
       }
       figcaption {
+        padding-top: 16px;
         line-height: 1.5em;
-        font-size: 14px;
+        font-size: 12px;
         color: #737373;
       }
     }
@@ -125,7 +132,7 @@ section.page-about {
     padding-bottom: 60px;
     img {
       float: right;
-      width: 40%;
+      width: 45%;
     }
     h4 {
       position: relative;
@@ -163,15 +170,12 @@ section.page-about {
       img {
         display: block;
         width: 100%;
-        max-width: 278px;
-        margin: 0 auto;
       }
       figcaption {
         position: absolute;
         bottom: 0;
-        left: 50%;
+        left: 0;
         width: 100%;
-        max-width: 278px;
         height: 2em;
         line-height: 2em;
         font-size: 14px;
@@ -179,7 +183,6 @@ section.page-about {
         white-space: nowrap;
         overflow: hidden;
         background-color: rgba(0, 0, 0, .6);
-        transform: translateX(-50%);
       }
     }
   }
@@ -192,7 +195,6 @@ section.page-about {
       img {
         display: block;
         width: 100%;
-        max-width: 278px;
         margin: 0 auto;
       }
       figcaption {

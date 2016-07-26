@@ -31,18 +31,22 @@ html
                 .areaheart.clearfix
                     a(name="culture",id="culture")
                     h3 企业文化
-                    figure
-                        img(src='public/imgs/pic_one.png', alt='团结')
-                        figcaption 尊重员工个性，加强团队协作;建立坦率且有效的沟通机制，吐故纳新，锐意进取，既包容员工个性，又奉行团队协作精神，旨在营造同进退、共进取的家庭式工作氛围;
-                    figure
-                        img(src='public/imgs/pic_two.png', alt='快乐')
-                        figcaption 致力于员工与客户的满意与成功;提供一个充满快乐和活力的工作环境，鼓舞并保持一种追求卓越成就的创业激情，使员工能获得生活与成功的快乐;
-                    figure
-                        img(src='public/imgs/pic_three.png', alt='创新')
-                        figcaption 追求速度和效率，专注于对公司和客户有影响力的创新;
-                    figure
-                        img(src='public/imgs/pic_four.png', alt='诚信')
-                        figcaption 建立信任与负责任的人际关系;
+                    .figure-box
+                        figure
+                            img(src='public/imgs/pic_one.png', alt='团结')
+                            figcaption 尊重员工个性，加强团队协作;建立坦率且有效的沟通机制，吐故纳新，锐意进取，既包容员工个性，又奉行团队协作精神，旨在营造同进退、共进取的家庭式工作氛围;
+                    .figure-box
+                        figure
+                            img(src='public/imgs/pic_two.png', alt='快乐')
+                            figcaption 致力于员工与客户的满意与成功;提供一个充满快乐和活力的工作环境，鼓舞并保持一种追求卓越成就的创业激情，使员工能获得生活与成功的快乐;
+                    .figure-box
+                        figure
+                            img(src='public/imgs/pic_three.png', alt='创新')
+                            figcaption 追求速度和效率，专注于对公司和客户有影响力的创新;
+                    .figure-box
+                        figure
+                            img(src='public/imgs/pic_four.png', alt='诚信')
+                            figcaption 建立信任与负责任的人际关系;
             .developcourse
                 .areaheart.clearfix
                     a(name="developcourse",id="developcourse")
@@ -111,5 +115,5 @@ html
                     p 炎黄娱动自创立以来，获得了行业巨头、创投基金、炎黄集团内部多方的关注与支持
                     img(src='public/imgs/partner.png', alt='partner')
         include includes/footer.pug
-        script(src="public/lib/bower_components/jquery/dist/jquery.min.js")
+        script(src="public/js/jquery.min.js")
         script(src="public/build/entry.js")

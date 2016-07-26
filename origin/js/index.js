@@ -17,7 +17,4 @@ $(function () {
         var product_height_r = $("section .product-info.bg-r .product-content").height();
         $("section .product-info.bg-r .product-img").height(product_height_r);
     }
-
-    $("#yhet-01").parallax();
-    $("#yhet-02").parallax();
 });
