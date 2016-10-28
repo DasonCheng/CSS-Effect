@@ -1,53 +1,19 @@
-.clearfix::after, .clearfix::before {
-  content: '';
-  display: block;
+body, html {
+  height: auto !important;
 }
 
-@import "mxin/variables";
-.clearfix::after {
-  clear: both;
-}
-
-.clearfix {
-  zoom: 1;
-}
-
-.areaheart {
-  position: relative;
-  padding: 0 20px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  transition: width .6s;
-}
-
-html {
-  cursor: default;
-}
-
-@media screen and (min-width: 0px) {
-  .areaheart {
-    width: 100%;
+#nprogress {
+  .spinner {
+    top: 50% !important;
+    right: 50% !important;
+    transform: translate(-50%, 50%);
   }
 }
 
-@media screen and (min-width: 970px) {
-  .areaheart {
-    width: 960px;
+.fade {
+  opacity: 1;
+  transition: opacity .3s linear .3s;
+  &.out {
+    opacity: .2;
   }
-}
-
-@media screen and (min-width: 1380px) {
-  .areaheart {
-    width: 1280px;
-  }
-}
-
-@media screen and (min-width: 1660px) {
-  .areaheart {
-    width: 1560px;
-  }
-}
-
-body {
-  font-family: HanHei SC, PingFang SC, Helvetica Neue, Helvetica, STHeitiSC-Light, Arial, Microsoft YaHei, STHeiti, sans-serif;
 }

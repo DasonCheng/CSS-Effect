@@ -1,0 +1,20 @@
+{
+  "name": "lib",
+  "authors": [
+    "DasonCheng <dasoncheng@yahoo.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "nprogress": "^0.2.0",
+    "semantic": "^2.2.4"
+  }
+}

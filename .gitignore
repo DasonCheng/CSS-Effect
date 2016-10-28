@@ -1,6 +1,4 @@
-.DS_Store
 node_modules
-public/build
-public/imgs
-public/lib/bower_components
+bower_components
+build
 *.html
