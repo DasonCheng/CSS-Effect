@@ -1,19 +1,12 @@
-body, html {
+body {
+  min-height: 100%;
   height: auto !important;
-}
-
-#nprogress {
-  .spinner {
-    top: 50% !important;
-    right: 50% !important;
-    transform: translate(-50%, 50%);
-  }
 }
 
 .fade {
   opacity: 1;
   transition: opacity .3s linear .3s;
   &.out {
-    opacity: .2;
+    opacity: .8;
   }
 }

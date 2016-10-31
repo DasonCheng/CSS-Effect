@@ -1,4 +1,4 @@
-import '../sass/nprogress.css'
+import '../lib/bower_components/nprogress/nprogress.css'
 import NProgress from '../lib/bower_components/nprogress/nprogress'
 NProgress.start();
 NProgress.set(0.4);
@@ -11,3 +11,11 @@ function subSomething() {
         NProgress.inc()
     }
 }
+$("body .pusher").css({
+    minHeight: $(window).height() + 'px'
+});
+$(window).resize(function () {
+    $("body .pusher").css({
+        minHeight: $(window).height() + 'px'
+    })
+});

@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "lib":"cd origin/lib && bower install && cd .. && cd ..",
     "build": "gulp pug && webpack",
     "dev": "gulp"
   },
